@@ -1,3 +1,5 @@
+## LAB REPORT 1
+
 # cd with no arguments
 ```
 [user@sahara ~/lecture1]$ cd
