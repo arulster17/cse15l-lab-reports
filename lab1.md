@@ -1,6 +1,6 @@
-## **_LAB REPORT 1_**
+# LAB REPORT 1
 
-# cd with no arguments
+## cd with no arguments
 ```
 [user@sahara ~/lecture1]$ cd
 [user@sahara ~]$
@@ -11,7 +11,7 @@
 # Error: This is not an error.
 ```
 
-# cd with a path to a directory as an argument
+## cd with a path to a directory as an argument
 ```
 [user@sahara ~/lecture1]$ cd messages
 [user@sahara ~/lecture1/messages]$ 
@@ -22,7 +22,7 @@
 # Error: This is not an error.
 ```
 
-# cd with a path to a file as an argument
+## cd with a path to a file as an argument
 ```
 [user@sahara ~/lecture1]$ cd README
 bash: cd: README: Not a directory
@@ -35,7 +35,7 @@ bash: cd: README: Not a directory
 #                  argument is not a directory.
 ```
 
-# ls with no arguments
+## ls with no arguments
 ```
 [user@sahara ~/lecture1]$ ls
 Hello.class  Hello.java  messages  README
@@ -47,7 +47,7 @@ Hello.class  Hello.java  messages  README
 # Error: This is not an error.
 ```
 
-# ls with a path to a directory as an argument
+## ls with a path to a directory as an argument
 ```
 [user@sahara ~/lecture1]$ ls messages
 en-us.txt  es-mx.txt  it.txt  zh-cn.txt
@@ -59,7 +59,7 @@ en-us.txt  es-mx.txt  it.txt  zh-cn.txt
 # Error: This is not an error.
 ```
 
-# ls with a path to a file as an argument
+## ls with a path to a file as an argument
 ```
 [user@sahara ~/lecture1]$ ls README 
 README
@@ -71,7 +71,7 @@ README
 # Error: This is not an error.
 ```
 
-# cd with no arguments
+## cd with no arguments
 ```
 [user@sahara ~/lecture1]$ cat
 test1
@@ -85,7 +85,7 @@ test2
 # Error: This is not an error.
 ```
 
-# cat with a path to a directory as an argument
+## cat with a path to a directory as an argument
 ```
 [user@sahara ~/lecture1]$ cat messages
 cat: messages: Is a directory
@@ -98,7 +98,7 @@ cat: messages: Is a directory
          the "messages: Is a directory" error and did nothing else.
 ```
 
-# cat with a path to a file as an argument
+## cat with a path to a file as an argument
 ```
 [user@sahara ~/lecture1]$ cat messages/en-us.txt 
 Hello World!
