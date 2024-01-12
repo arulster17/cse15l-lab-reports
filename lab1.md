@@ -4,7 +4,7 @@
 [user@sahara ~]$
 
 # Working Directory: /home/lecture1
-# Why this output: When cd is executed with no arguments, it sets the workingdirectoryback to the
+# Why this output: When cd is executed with no arguments, it sets the working directory back to the
 #                  home directory. In this case, it sets the working directory to /home
 # Error: This is not an error.
 ```
