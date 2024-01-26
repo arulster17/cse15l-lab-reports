@@ -87,8 +87,11 @@ public class ChatServer {
 - The messages ArrayList updates to contain all of the sent messages.
 
 ## PART 2
+
 **Private Key**
+
 ![Private Key](/lab2privateKey.png)
 
 **Public Key**
+
 ![Private Key](/lab2publicKey.png)
