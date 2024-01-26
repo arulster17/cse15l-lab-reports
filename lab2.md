@@ -88,7 +88,7 @@ public class ChatServer {
 
 ## PART 2
 **Private Key**
-![Private Key](/lab1privateKey.png)
+![Private Key](/lab2privateKey.png)
 
 **Public Key**
-![Private Key](/lab2privateKey.png)
+![Private Key](/lab2publicKey.png)
