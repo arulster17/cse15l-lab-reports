@@ -102,4 +102,4 @@ public class ChatServer {
 
 ## PART 3
 
-I learned a lot more about servers and URLs in the past two weeks. Previously, I knew nothing about how we could connect websites to Java programs, and I really enjoyed learning and making things like number and chat servers. 
+I learned a lot more about servers and URLs in the past two weeks. Previously, I knew nothing about how we could connect websites to Java programs, and I really enjoyed learning and making things like number and chat servers. I also learned more about ssh than I knew before, such as the scp command and saving the password in the authorized file. One thing related to this that I hope to do is to provide input through a website in a method besides the URL. I would like to make an actual little chat website in pure Java, where people can send messages just through text box inputs and send buttons. I hope we learn about this in the coming weeks. 
