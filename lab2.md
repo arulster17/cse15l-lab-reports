@@ -98,4 +98,4 @@ public class ChatServer {
 
 **Logging into ieng6 without password**
 
-
+![SSH login w/o Password](/lab2noPasswordLogin.png)
