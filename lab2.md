@@ -1,6 +1,6 @@
 # LAB REPORT 2
 
-## Chat Server Code:
+## ChatServer.java Code:
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -57,4 +57,7 @@ public class ChatServer {
     }
 }
 ```
-
+## Message 1
+![Message 1](/message1img)
+## Message 2
+![Message 2](/message2img)
