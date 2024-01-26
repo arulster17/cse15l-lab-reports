@@ -94,7 +94,7 @@ public class ChatServer {
 
 **Public Key**
 
-![Private Key](/lab2publicKey.png)
+![Private Key](/lab2publicKey2.png)
 
 **Logging into ieng6 without password**
 
