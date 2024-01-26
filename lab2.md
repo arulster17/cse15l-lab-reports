@@ -87,6 +87,8 @@ public class ChatServer {
 - The messages ArrayList updates to contain all of the sent messages.
 
 ## PART 2
-Path to private key: ```/Users/mathurs/.ssh/id_rsa```
-Path to public key: ```/Users/mathurs/.ssh/id_rsa.pub``` 
+**Private Key**
+![Private Key](/lab1privateKey.png)
 
+**Public Key**
+![Private Key](/lab2privateKey.png)
