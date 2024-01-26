@@ -99,3 +99,7 @@ public class ChatServer {
 **Logging into ieng6 without password**
 
 ![SSH login w/o Password](/lab2noPasswordLogin.png)
+
+## PART 3
+
+I learned a lot more about servers and URLs in the past two weeks. Previously, I knew nothing about how we could connect websites to Java programs, and I really enjoyed learning and making things like number and chat servers. 
