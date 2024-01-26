@@ -70,7 +70,7 @@ public class ChatServer {
 - The getAllMessages() helper takes no arguments and only uses the messages ArrayList
 
 *How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.*
-- The messages ArrayList updates to contain all of the sent messages.
+- The messages ArrayList updates to contain all of the sent messages by adding "srujamdave0109: knock knock".
 
 **Message 2**
 ![Message 2](/message2img)
@@ -84,7 +84,7 @@ public class ChatServer {
 - The getAllMessages() helper takes no arguments and only uses the messages ArrayList
 
 *How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.*
-- The messages ArrayList updates to contain all of the sent messages.
+- The messages ArrayList updates to contain all of the sent messages by adding "arulster17: who's there?".
 
 ## PART 2
 
