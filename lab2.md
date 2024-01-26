@@ -1,6 +1,7 @@
 # LAB REPORT 2
 
-## ChatServer.java Code:
+## PART 1
+**ChatServer.java Code:**
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -57,7 +58,7 @@ public class ChatServer {
     }
 }
 ```
-## Message 1
+**Message 1**
 ![Message 1](/message1img)
 *Which methods in your code are called?*
 - The handleRequest method is called first, then it goes into the contains("/add-message") path.
@@ -71,7 +72,7 @@ public class ChatServer {
 *How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.*
 - The messages ArrayList updates to contain all of the sent messages.
 
-## Message 2
+**Message 2**
 ![Message 2](/message2img)
 *Which methods in your code are called?*
 - The handleRequest method is called first, then it goes into the contains("/add-message") path.
@@ -84,4 +85,5 @@ public class ChatServer {
 
 *How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.*
 - The messages ArrayList updates to contain all of the sent messages.
+
 
