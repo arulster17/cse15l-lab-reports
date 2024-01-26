@@ -86,4 +86,7 @@ public class ChatServer {
 *How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.*
 - The messages ArrayList updates to contain all of the sent messages.
 
+## PART 2
+Path to private key: ```/Users/mathurs/.ssh/id_rsa```
+Path to public key: ```/Users/mathurs/.ssh/id_rsa.pub``` 
 
