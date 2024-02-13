@@ -24,4 +24,4 @@ public void testReverseInPlacePass() {
 ```
 
 **Symptom**
-
+![Symptom](/lab3symptoms.png)
