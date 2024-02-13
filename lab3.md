@@ -22,3 +22,6 @@ public void testReverseInPlacePass() {
   assertArrayEquals(new int[]{1, 2, 1}, input1);
 }
 ```
+
+**Symptom**
+
