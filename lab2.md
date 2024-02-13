@@ -61,30 +61,30 @@ public class ChatServer {
 **Message 1**
 ![Message 1](/message1img)
 *Which methods in your code are called?*
-- The handleRequest method is called first, then it goes into the contains("/add-message") path.
-- This path extracts the message from the URL and  calls private helper getAllMessages() to print all messages
+- The ```handleRequest``` method is called first, then it goes into the ```contains("/add-message")``` path.
+- This path extracts the message from the URL and calls private helper ```getAllMessages()``` to print all messages
 
 *What are the relevant arguments to those methods, and the values of any relevant fields of the class?*
-- The handleRequest takes in the URL (http://localhost:4000/add-message?s=knock%20knock&user=srujamdave0109) as an argument.
-- ArrayList<String> messages stores the current messages. Currently, we have messages = {"srujamdave0109: knock knock"}
-- The getAllMessages() helper takes no arguments and only uses the messages ArrayList
+- The ```handleRequest``` takes in the URL (```http://localhost:4000/add-message?s=knock%20knock&user=srujamdave0109```) as an argument.
+- ```ArrayList<String> messages``` stores the current messages. Before the code is executed, the ArrayList is empty.
+- The ```getAllMessages()``` helper takes no arguments and only uses ```messages```.
 
 *How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.*
-- The messages ArrayList updates to contain all of the sent messages by adding "srujamdave0109: knock knock".
+- ```messages``` updates to contain all of the sent messages by adding ```"srujamdave0109: knock knock"```. Now, we have ```messages = {"srujamdave0109: knock knock"}``` 
 
 **Message 2**
 ![Message 2](/message2img)
 *Which methods in your code are called?*
-- The handleRequest method is called first, then it goes into the contains("/add-message") path.
-- This path extracts the message from the URL and  calls private helper getAllMessages() to print all messages
+- The ```handleRequest``` method is called first, then it goes into the ```contains("/add-message")``` path.
+- This path extracts the message from the URL and calls private helper ```getAllMessages()``` to print all messages
 
 *What are the relevant arguments to those methods, and the values of any relevant fields of the class?*
-- The handleRequest takes in the URL (http://localhost:4000/add-message?s=who%27s%20there?&user=arulster17) as an argument.
-- ArrayList<String> messages stores the current messages. Currently, we have messages = {"srujamdave0109: knock knock", "arulster17: who's there?"}
-- The getAllMessages() helper takes no arguments and only uses the messages ArrayList
+- The ```handleRequest``` takes in the URL (```http://localhost:4000/add-message?s=who%27s%20there?&user=arulster17```) as an argument.
+- ```ArrayList<String> messages``` stores the current messages. Before the code is executed, ```messages``` contains one message: ```messages = {"srujamdave0109: knock knock"}```
+- ```The getAllMessages()``` helper takes no arguments and only uses ```messages```.
 
 *How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.*
-- The messages ArrayList updates to contain all of the sent messages by adding "arulster17: who's there?".
+- The ```messages``` ArrayList updates to contain all of the sent messages by adding "arulster17: who's there?". Now, we have ```messages = {"srujamdave0109: knock knock", "arulster17: who's there?"}``` 
 
 ## PART 2
 
