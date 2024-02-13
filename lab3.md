@@ -48,4 +48,5 @@ static void reverseInPlace(int[] arr) {
 ```
 
 **Why the Fix Works**
+
 The original code tries to loop through the whole array and replace each element ```arr[i]``` with the element at the opposite index, ```arr[arr.length - i - 1]```. However, when we reach the second half of the array, the first half of the array has already been overwritten, and the data previously there is lost. We fix this by simply iterating through the first half of the array and using a temporary variable to switch data between entries.
