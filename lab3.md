@@ -26,7 +26,7 @@ public void testReverseInPlacePass() {
 **Symptom**
 ![Symptom](/lab3symptoms.png)
 
-**Bugfixing**
+**Bug**
 *Before*
 ```
 static void reverseInPlace(int[] arr) {
