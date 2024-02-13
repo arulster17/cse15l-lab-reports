@@ -66,7 +66,7 @@ public class ChatServer {
 
 *What are the relevant arguments to those methods, and the values of any relevant fields of the class?*
 - The ```handleRequest``` takes in the URL (```http://localhost:4000/add-message?s=knock%20knock&user=srujamdave0109```) as an argument.
-- ```ArrayList<String> messages``` stores the current messages. Before the code is executed, the ArrayList is empty.
+- ```ArrayList<String> messages``` stores the current messages. Before the code is executed, the ArrayList is empty. (```messages = {}```)
 - The ```getAllMessages()``` helper takes no arguments and only uses ```messages```.
 
 *How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.*
