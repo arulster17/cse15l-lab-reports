@@ -55,7 +55,7 @@ The original code tries to loop through the whole array and replace each element
 
 I chose the ```grep``` command. We will examine the following 4 command-line options: ```-c, -l, -r, --context```.
 
-# ```-c``` flag
+__**```-c``` flag**__
 
 *Example 1*
 ```
