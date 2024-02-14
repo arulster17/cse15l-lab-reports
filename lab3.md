@@ -55,7 +55,7 @@ The original code tries to loop through the whole array and replace each element
 
 I chose the ```grep``` command. We will examine the following 4 command-line options: ```-c, -l, -r, --context```.
 
-**```-c``` flag**
+# ```-c``` flag
 
 *Example 1*
 ```
@@ -71,7 +71,7 @@ main:docsearch$ grep -c "Coyne" technical/plos/journal.pbio.0030062.txt
 
 The ```-c``` flag makes the command print the number of lines containing the pattern instead of the lines themselves. This flag is very useful for finding the number of instances of something, such as the number of patients with a certain infection in a hospital record or the number of football games with a final score of ```20-13``` in a database.
 
-**```-l``` flag**
+# ```-l``` flag
 
 *Example 1*
 ```
@@ -96,7 +96,7 @@ technical/plos/journal.pbio.0030062.txt
 
 The ```-l``` flag makes the command print the files that contain the pattern out of the given files. This flag is very useful for finding all files with specific patterns in a directory, such as finding which logs in a logbook contain ```"Error"```. Since it gives you a list of files that contain the pattern, the flag also enables further operations on those files. This flag often benefits from the use of the ```-r``` flag, which we discuss next.
 
-**```-r``` flag**
+# ```-r``` flag
 
 *Example 1*
 ```
@@ -125,7 +125,7 @@ technical/911report/chapter-12.txt:                about the size of a grapefrui
 
 The ```-r``` flag makes the command recursively read and search for the pattern in all files. This flag is very useful for finding all instances of a specific pattern in a directory, and it essentially extends the power of ```grep``` to search entire directories. In my opinion, this is the most useful ```grep``` flag.
 
-**```--context``` flag**
+# ```--context``` flag
 
 *Example 1*
 ```
