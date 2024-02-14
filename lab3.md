@@ -71,6 +71,8 @@ main:docsearch$ grep -c "Coyne" technical/plos/journal.pbio.0030062.txt
 
 The ```-c``` flag makes the command print the number of lines containing the pattern instead of the lines themselves. This flag is very useful for finding the number of instances of something, such as the number of patients with a certain infection in a hospital record or the number of football games with a final score of ```20-13``` in a database.
 
+**Source**: ```man grep``` in command line.
+
 **```-l``` flag**
 
 *Example 1*
@@ -95,6 +97,8 @@ technical/plos/journal.pbio.0030062.txt
 ```
 
 The ```-l``` flag makes the command print the files that contain the pattern out of the given files. This flag is very useful for finding all files with specific patterns in a directory, such as finding which logs in a logbook contain ```"Error"```. Since it gives you a list of files that contain the pattern, the flag also enables further operations on those files. This flag often benefits from the use of the ```-r``` flag, which we discuss next.
+
+**Source**: ```man grep``` in command line.
 
 **```-r``` flag**
 
@@ -125,6 +129,8 @@ technical/911report/chapter-12.txt:                about the size of a grapefrui
 
 The ```-r``` flag makes the command recursively read and search for the pattern in all files. This flag is very useful for finding all instances of a specific pattern in a directory, and it essentially extends the power of ```grep``` to search entire directories. In my opinion, this is the most useful ```grep``` flag.
 
+**Source**: ```man grep``` in command line.
+
 **```--context``` flag**
 
 *Example 1*
@@ -147,3 +153,4 @@ main:docsearch$ grep --context=1 "pineapple" technical/biomed/1472-6882-1-10.txt
 
 The ```--context[=num]``` flag prints the ```num``` lines before and after the line with the match (```num``` has a default value of 2). This flag is extremely useful for peeking into matches in large files, such as looking at contextual chat messages near a flagged message in a log. While this may not be as useful in scripting as ```-r``` or ```-l```, it is very convenient for users to investigate more into the pattern matches.
 
+**Source**: ```man grep``` in command line.
