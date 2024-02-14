@@ -54,3 +54,6 @@ The original code tries to loop through the whole array and replace each element
 ## PART 2
 
 I chose the ```grep``` command. We will examine the following 4 command-line options: ```-c, -l, -r, --context```.
+
+**-c**
+s
