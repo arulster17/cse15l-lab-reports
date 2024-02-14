@@ -56,4 +56,42 @@ The original code tries to loop through the whole array and replace each element
 I chose the ```grep``` command. We will examine the following 4 command-line options: ```-c, -l, -r, --context```.
 
 **-c**
-s
+
+*Example 1*
+```
+main:docsearch$ grep -c "adenoviral" technical/biomed/ar104.txt
+7
+```
+
+*Example 2*
+```
+main:docsearch$ grep -c "Coyne" technical/plos/journal.pbio.0030062.txt
+22
+```
+
+The ```-c``` flag makes the command print the number of lines containing the pattern instead of the lines themselves. This flag is very useful for finding the number of instances of something, such as the number of patients with a certain infection in a hospital record or the number of football games with a final score of 20-13 in a database.
+
+**-l**
+
+*Example 1*
+```
+main:docsearch$ grep -l "Darwin" technical/*/*.txt
+technical/biomed/1471-2105-3-2.txt
+technical/plos/journal.pbio.0020046.txt
+technical/plos/journal.pbio.0020071.txt
+technical/plos/journal.pbio.0020302.txt
+technical/plos/journal.pbio.0020311.txt
+technical/plos/journal.pbio.0020346.txt
+technical/plos/journal.pbio.0020347.txt
+technical/plos/journal.pbio.0020439.txt
+
+```
+
+*Example 2*
+```
+main:docsearch$ grep -l "Coyne" technical/plos/*.txt                   
+technical/plos/journal.pbio.0020420.txt
+technical/plos/journal.pbio.0030062.txt
+```
+
+The ```-l``` flag makes the command print the files that contain the pattern out of the given files. This flag is very useful for finding specific patterns in entire directories, such as finding which files in a hospital's directory contain a certain patient's data. Since it gives you a list of files that contain the pattern, the flag also enables further operations on those files (aka find the file with the most words out of files containing "Hello").
