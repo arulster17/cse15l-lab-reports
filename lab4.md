@@ -42,7 +42,7 @@ Keys Pressed: ```<up> <up> <enter>```
 
 Since we ran the test script just before we used vim, we know the testing command is 2 up in our history. We can access it by pressing up 2 times and hitting enter. This command runs the testing script again, which now shows that all tests pass.
 
-***Step 9:Commit and push the resulting change to your Github account***
+***Step 9: Commit and push the resulting change to your Github account***
 
 ![img](/labreport4img9.png)
 
