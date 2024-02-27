@@ -36,4 +36,4 @@ Since we ran the test script just before we used vim, we know the testing comman
 
 Keys Pressed: ```git commit -am ., git push```
 
-The ```-a``` flag for git commit essentially tells git to add all modified files (in this case ```ListExamples.java```). We also add the ```-m``` flag and give ```.``` as the commit message. We can then push the code to the repository and we are done.
+The ```-a``` flag for git commit essentially tells git to stage all modified files for commit (in this case ```ListExamples.java```). We also add the ```-m``` flag and give ```.``` as the commit message. We can then push the code to the repository and we are done.
