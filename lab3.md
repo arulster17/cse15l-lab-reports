@@ -63,11 +63,15 @@ main:docsearch$ grep -c "adenoviral" technical/biomed/ar104.txt
 7
 ```
 
+This shows that there are 7 instances of the word "adenoviral" in the file.
+
 *Example 2*
 ```
 main:docsearch$ grep -c "Coyne" technical/plos/journal.pbio.0030062.txt
 22
 ```
+
+This shows that there are 22 instances of the word "Coyne" in the file.
 
 The ```-c``` flag makes the command print the number of lines containing the pattern instead of the lines themselves. This flag is very useful for finding the number of instances of something, such as the number of patients with a certain infection in a hospital record or the number of football games with a final score of ```20-13``` in a database.
 
@@ -89,12 +93,17 @@ technical/plos/journal.pbio.0020439.txt
 
 ```
 
+This shows all 8 files that mention the word "Darwin".
+
+
 *Example 2*
 ```
 main:docsearch$ grep -l "Coyne" technical/plos/*.txt                   
 technical/plos/journal.pbio.0020420.txt
 technical/plos/journal.pbio.0030062.txt
 ```
+
+This shows all 2 files that mention the word "Coyne".
 
 The ```-l``` flag makes the command print the files that contain the pattern out of the given files. This flag is very useful for finding all files with specific patterns in a directory, such as finding which logs in a logbook contain ```"Error"```. Since it gives you a list of files that contain the pattern, the flag also enables further operations on those files. This flag often benefits from the use of the ```-r``` flag, which we discuss next.
 
@@ -115,6 +124,8 @@ technical//plos/journal.pbio.0020439.txt
 technical//biomed/1471-2105-3-2.txt
 ```
 
+This shows all files in the ```technical``` directory that contain the word "Darwin".
+
 *Example 2*
 ```
 main:docsearch$ grep -r "grape" technical
@@ -126,6 +137,8 @@ technical/biomed/1472-6750-2-2.txt:        not effective on non-grapevine host p
 technical/biomed/1472-6750-2-2.txt:        grape would be beneficial for disease control in field
 technical/911report/chapter-12.txt:                about the size of a grapefruit or an orange, together with commercially available
 ```
+
+This shows all instances of the word "grape" in the ```technical``` directory.
 
 The ```-r``` flag makes the command recursively read and search for the pattern in all files. This flag is very useful for finding all instances of a specific pattern in a directory, and it essentially extends the power of ```grep``` to search entire directories. In my opinion, this is the most useful ```grep``` flag.
 
@@ -143,6 +156,8 @@ main:docsearch$ grep --context "grapewine" technical/plos/journal.pbio.0020224.t
         them onto resistant rootstocks from the New World. Since then, these rootstocks have been
 ```
 
+This shows 2 (the default context argument) lines of context before and after the line with the matching pattern "grapewine".
+
 *Example 2*
 ```
 main:docsearch$ grep --context=1 "pineapple" technical/biomed/1472-6882-1-10.txt
@@ -150,6 +165,8 @@ main:docsearch$ grep --context=1 "pineapple" technical/biomed/1472-6882-1-10.txt
           antibiotics and the ananase enzyme (from the pineapple 
           Ananas comosus ) and needs to take
 ```
+
+This shows 1 line of context before and after the line with the matching pattern "pineapple.
 
 The ```--context[=num]``` flag prints the ```num``` lines before and after the line with the match (```num``` has a default value of 2). This flag is extremely useful for peeking into matches in large files, such as looking at contextual chat messages near a flagged message in a log. While this may not be as useful in scripting as ```-r``` or ```-l```, it is very convenient for users to investigate more into the pattern matches.
 
