@@ -18,8 +18,10 @@ print 'could anything be more fun'
 
 lab reports whee
 
-[lab report 1](https://arulster17.github.io/cse15l-lab-reports/lab1.html)
+[omg da first](https://arulster17.github.io/cse15l-lab-reports/lab1.html)
 
-[lab report 2](https://arulster17.github.io/cse15l-lab-reports/lab2.html)
+[anotha one](https://arulster17.github.io/cse15l-lab-reports/lab2.html)
 
-[lab report 3](https://arulster17.github.io/cse15l-lab-reports/lab3.html)
+[tres](https://arulster17.github.io/cse15l-lab-reports/lab3.html)
+
+[omegahsh numero 4???](https://arulster17.github.io/cse15l-lab-reports/lab4.html)
