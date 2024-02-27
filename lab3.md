@@ -103,7 +103,7 @@ technical/plos/journal.pbio.0020420.txt
 technical/plos/journal.pbio.0030062.txt
 ```
 
-This shows all 2 files that mention the word "Coyne".
+This shows all 2 files (```journal.pbio.0020420.txt``` and ```journal.pbio.0030062.txt```) that mention the word "Coyne".
 
 The ```-l``` flag makes the command print the files that contain the pattern out of the given files. This flag is very useful for finding all files with specific patterns in a directory, such as finding which logs in a logbook contain ```"Error"```. Since it gives you a list of files that contain the pattern, the flag also enables further operations on those files. This flag often benefits from the use of the ```-r``` flag, which we discuss next.
 
@@ -166,7 +166,7 @@ main:docsearch$ grep --context=1 "pineapple" technical/biomed/1472-6882-1-10.txt
           Ananas comosus ) and needs to take
 ```
 
-This shows 1 line of context before and after the line with the matching pattern "pineapple.
+This shows 1 line of context before and after the line with the matching pattern "pineapple".
 
 The ```--context[=num]``` flag prints the ```num``` lines before and after the line with the match (```num``` has a default value of 2). This flag is extremely useful for peeking into matches in large files, such as looking at contextual chat messages near a flagged message in a log. While this may not be as useful in scripting as ```-r``` or ```-l```, it is very convenient for users to investigate more into the pattern matches.
 
