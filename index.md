@@ -15,3 +15,11 @@ horizontal rule
 print 'could anything be more fun'
 # no
 ```
+
+lab reports whee
+
+[lab report 1](https://arulster17.github.io/cse15l-lab-reports/lab1.html)
+
+[lab report 2](https://arulster17.github.io/cse15l-lab-reports/lab2.html)
+
+[lab report 3](https://arulster17.github.io/cse15l-lab-reports/lab3.html)
