@@ -167,14 +167,15 @@ fi
 Here are the contents of the new file ```mysecurity.policy```:
 ```grant{};```
 
-Essentially what this change does is invoke the built-in Java SecurityManager to handle the permissions that the java file has. We first create a ```.policy``` file that grants the java file no permissions (as seen by the empty grant section). Now, if the student submission tries to execute commands in their submission, a SecurityException will be thrown. Then, in the grade.sh file, we import the policy file into the grading-area for use. Finally, in the TestListExamples.java file, we add a before clause to initialize the security manager to set up the permissions properly.
+Essentially what this change does is invoke the built-in Java SecurityManager to handle the permissions that the java file has. We first create a ```.policy``` file that grants the java file no permissions (as seen by the empty grant section). Now, if the student submission tries to execute commands in their submission, an AccessControlException will be thrown. Then, in the grade.sh file, we import the policy file into the grading-area for use. Finally, in the TestListExamples.java file, we add a before clause to initialize the security manager to set up the permissions properly.
 
 Pre-patch behavior:
 ![img](/lab5symptom.png)
 
 Post-patch behavior:
+![img](/lab5postpatch.png)
 
+Note: Now upon testing the bad submission, the ```junit-output.txt``` file for that submission shows us that an AccessControlException was thrown!
 
-// created mysecurity.policy file
-// added before clause to TestListExamples.java that started the java security manager
-// added cp mysecurity.policy to grade.sh
+***Reflection***
+In the past few weeks, I learned a lot while trying to solve this bug. I came up with it in the week 6 exercise and none of my friends' graders could handle the bug. I was very curious on how the java file's access to command line could be controlled, as I felt that giving a student submission pure access to command line was really dangerous (like my student submission demonstrated). While solving this, I learned a lot about Java's SecurityManager and how policy files work.
