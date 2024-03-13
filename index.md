@@ -25,3 +25,5 @@ lab reports whee
 [tres](https://arulster17.github.io/cse15l-lab-reports/lab3.html)
 
 [omegahsh numero 4???](https://arulster17.github.io/cse15l-lab-reports/lab4.html)
+
+[el fin D:](https://arulster17.github.io/cse15l-lab-reports/lab5.html)
