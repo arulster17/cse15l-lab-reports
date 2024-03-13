@@ -154,7 +154,7 @@ then
 	cp TestListExamples.java grading-area
 	cp $bab grading-area
 	cp -r lib grading-area
-  cp mysecurity.policy grading-area # <--- added this line
+  	cp mysecurity.policy grading-area # <--- added this line
 
 else
 	echo 'Missing ListExamples.java, did you forget the file or misname it?'
@@ -166,6 +166,14 @@ fi
 
 Here are the contents of the new file ```mysecurity.policy```:
 ```grant{};```
+
+Essentially what this change does is invoke the built-in Java SecurityManager to handle the permissions that the java file has. We first create a ```.policy``` file that grants the java file no permissions (as seen by the empty grant section). Now, if the student submission tries to execute commands in their submission, a SecurityException will be thrown. Then, in the grade.sh file, we import the policy file into the grading-area for use. Finally, in the TestListExamples.java file, we add a before clause to initialize the security manager to set up the permissions properly.
+
+Pre-patch behavior:
+![img](/lab5symptom.png)
+
+Post-patch behavior:
+
 
 // created mysecurity.policy file
 // added before clause to TestListExamples.java that started the java security manager
