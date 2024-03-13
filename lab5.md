@@ -9,7 +9,7 @@ It looks like my grade.sh file is completely gone. I think that at some point du
 TA: You seem to have identified the symptom correctly. Is there something in your grade.sh file that messes with the file itself? If not, can you investigate the student submission and see if they have something to do with it?
 
 Student: Ah, I found this in the student submission. It seems they just use java processes to run console commands and deleted my grade.sh file.
-# insert issue image here
+![img](/lab5issue.png)
 
 Student: I fixed the issue by using Java's SecurityManager feature. 
 
@@ -178,4 +178,5 @@ Post-patch behavior:
 Note: Now upon testing the bad submission, the ```junit-output.txt``` file for that submission shows us that an AccessControlException was thrown!
 
 ***Reflection***
+
 In the past few weeks, I learned a lot while trying to solve this bug. I came up with it in the week 6 exercise and none of my friends' graders could handle the bug. I was very curious on how the java file's access to command line could be controlled, as I felt that giving a student submission pure access to command line was really dangerous (like my student submission demonstrated). While solving this, I learned a lot about Java's SecurityManager and how policy files work.
